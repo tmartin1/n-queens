@@ -77,9 +77,8 @@ var nQueens = function(N) {
     }
   };
 
-  buildCache();
-
   var start = new Date().getTime();
+  buildCache();
   placeQueens(0);
   var end = new Date().getTime();
   var runtime = end - start;
